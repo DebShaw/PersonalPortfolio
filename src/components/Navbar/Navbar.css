@@ -1,0 +1,36 @@
+nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 0.7rem 1.2rem;
+    border-radius: 3rem;
+    z-index: 2;
+    gap: 0.8rem;
+    backdrop-filter: blur(15px);
+}
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    display: flex;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+nav a.active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+@media screen and (max-width: 600px) {
+    nav a{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
